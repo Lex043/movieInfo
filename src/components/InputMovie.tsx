@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import randomMovie from "../utils/randomMovie";
+import Movies from "./Movies";
 import Spinner from "./Spinner";
-import MovieList from "./MovieList";
 const InputMovie = () => {
     const [text, setText] = useState<string>("")
     const [data, setData] = useState(randomMovie())
@@ -61,7 +61,7 @@ const InputMovie = () => {
 
             {error && <div className="font-bold text-center">{error}</div>}
 
-            {loading ? <Spinner />: results && <MovieList results={results} />}
+            {loading ? <Spinner />: results && <Movies results={results} />}
         </section>
     );
 };

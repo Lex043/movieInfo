@@ -1,7 +1,7 @@
 interface Props {
     results: any;
 }
-const MovieList = ({results}: Props) => {
+const Movies = ({results}: Props) => {
     return (
         <div className="py-8 grid gap-6 grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
             {results && results.map((result: any, index: number) => (
@@ -19,4 +19,4 @@ const MovieList = ({results}: Props) => {
     );
 };
 
-export default MovieList;
+export default Movies;
