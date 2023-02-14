@@ -17,7 +17,7 @@ const InputMovie = () => {
 
     const MOVIE_KEY = import.meta.env.VITE_MOVIE_KEY
 
-    const url = `http://www.omdbapi.com/?s=${data}&apikey=${MOVIE_KEY}`
+    const url = `https://www.omdbapi.com/?s=${data}&apikey=${MOVIE_KEY}`
 
     useEffect(() => {
         async function fetchData() {
